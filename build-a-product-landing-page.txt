@@ -1,0 +1,372 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <title>Graphic Design Services</title>
+  </head>
+  <body>
+    <header id="header">
+      <img src="https://naranjeros.com/wp-content/uploads/2023/10/cropped-logo-main-web-300x105.png" id="header-img" alt="Logotipo de Naranjeros">
+      <nav id="nav-bar">
+        <ul>
+          <a href="#Jersey_Desert_Detalles" class="nav-link"><li >Detalles</li></a>
+          <a href="#modelos" class="nav-link"><li >Modelos</li></a>
+          <a href="#enterate" class="nav-link"><li>Enterate</li></a>
+      </nav>
+    </header>
+    <main>
+      <section id="Jersey_Desert_Detalles">
+        <h1 class="main-title">Jersey Desert</h1>
+        <p class="main-caption">Temporada 2024-2025</p>
+        <iframe id="video" src="https://www.youtube.com/watch?v=hYOOzlns9qA"></iframe>
+      </section>
+      <section id="modelos">
+        <h2>Modelos</h2>
+        <div class="modelos_group">
+          <div class="jersey_card">
+            <img class="img_jersey" src="https://tiendanaranjeros.com/cdn/shop/files/Jersey17HMO_Caballero_1.jpg?v=1726266504" alt="Jersey Desert Caballero">
+            <div class="card_info">
+              <h3>Jersey Caballero</h3>
+              <p>¡Quedan pocas tallas!</p>
+              <p class="precio">$1,450 <span class="versalitas">MXN</span></p>
+              <a href="https://tiendanaranjeros.com/collections/caballeros/products/jersey-desert-caballero" target="_blank"><button type="button">Comprar</button></a>
+            </div>
+          </div>
+          <div class="jersey_card">
+            <img class="img_jersey" src="https://tiendanaranjeros.com/cdn/shop/files/Jersey17HMO_Dama_1.jpg?v=1726858232" alt="Jersey Desert Caballero">
+            <div class="card_info">
+              <h3>Jersey Dama</h3>
+              <p>Tallas disponibles</p>
+              <p class="precio">$1,400 <span class="versalitas">MXN</span></p>
+              <a href="https://tiendanaranjeros.com/collections/jerseys-damas/products/jersey-desert-dama" target="_blank"><button>Comprar</button></a>
+            </div>
+          </div>
+          <div class="jersey_card">
+            <img class="img_jersey" src="https://tiendanaranjeros.com/cdn/shop/files/JerseyDesert_Juvenil_Caballero_7.jpg?v=1731270760" alt="Jersey Desert Caballero">
+            <div class="card_info">
+              <h3>Jersey Juvenil</h3>
+              <p>Tallas disponibles</p>
+              <p class="precio">$1,399 <span class="versalitas">MXN</span></p>
+              <a href="https://tiendanaranjeros.com/collections/jerseys-ninos/products/jersey-desert" target="_blank"><button>Comprar</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="enterate">
+        <h2>Suscribete a nuestro Newsletter</h2>
+        <div class="newsletter">
+          <p>Enterate de TODOS nuestros lanzamientos</p>
+          <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input id="email" type="email" name="email" placeholder="beto@naranjeros.com.mx" />
+            <input class="email-submit" id="submit" type="submit" value="Suscribirme">
+          </form>
+        </div>
+      </section>
+      <footer>
+        <img id="ftr-img" src="https://naranjeros.com/wp-content/uploads/2023/08/H-footer.png" alt="H logo Naranjeros" />
+        <div class="ftr-left">
+          <a id="web-page" href="https://naranjeros.com/">www.naranjeros.com</a>
+          <div class="social-media">
+            <a href="https://www.linkedin.com/school/free-code-camp/">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/freecodecamp/">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com/freecodecamp">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/freecodecamp">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+:root {
+  --dark-color: #1c1c1c;
+  --orange-nh: #ff6b00;
+  --desert-color: #e6d6bc;
+  --desert-darker-color: #d4c4a9;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", san-serif;
+  background-color: var(--desert-color);
+}
+
+header {
+  position: sticky;
+  width: 100%;
+  height: 70px;
+  background-color: var(--dark-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+}
+
+nav {
+  width: 50%;
+  max-width: 300px;
+  height: 50px;
+  padding-right: 8vw;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
+}
+
+nav li {
+  color: white;
+  list-style: none;
+  display: block;
+  padding: 0.5em;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav li:hover{
+  background-color: var(--orange-nh);
+  padding: 0.5em;
+  color: var(--dark-color);
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+#header-img {
+  width: max(130px, 10vw);
+  padding-left: 9vw;
+}
+
+main {
+  margin: auto;
+}
+
+h1 {
+  font-size: 2.6em;
+  font-weight: 800;
+  margin: 1em 0 0 0;
+}
+
+.main-caption {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin: 2em 0 0.5em 0;
+}
+
+h3{
+  font-size: 1.3em;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+section{
+  margin: auto;
+  width: 80%;
+}
+
+iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+.modelos_group {
+  width: 100%;
+  display: flex;
+}
+
+.jersey_card {
+  background-color: var(--desert-darker-color);
+  margin-right: 1em;
+}
+
+.jersey_card img {
+  width: 100%;
+}
+
+.card_info {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+} 
+
+.card_info h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+.card_info button {
+  width: 60%;
+  height: 2em;
+  font-size: 1em;
+  font-weigth: 700;
+  background-color: var(--orange-nh);
+  border: none;
+}
+
+.card_info button:hover {
+  width: 60%;
+  height: 2em;
+  font-size: 1em;
+  font-weight: 800;
+  color: var(--orange-nh);
+  background-color: var(--dark-color);
+  border: none;
+}
+
+.precio {
+  padding: 0.5em 0;
+  font-size: 1.2em;
+}
+
+.versalitas {
+  font-size: 1em !important;
+}
+
+#enterate {
+  heigth: 20vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.newsletter {
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+#email {
+  background-color: transparent;
+  border: 1px solid var(--dark-color);
+  width: 60%;
+  padding: 0.3em 0.5em;
+  font-size: 1em;
+  color: var(--dark-color);
+}
+
+.newsletter p {
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.email-submit {
+  width: 30%;
+  background-color: var(--dark-color);
+  border: 1px solid var(--dark-color);
+  color: var(--orange-nh);
+  border: none;
+  padding: 0.35em 0.5em;
+  font-size: 1em;
+}
+
+footer {
+  display: flex;
+  padding: 1em 10vw;
+  margin: 1em 0 0 0;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--dark-color);
+}
+
+.ftr-left {
+  justify-items: flex-end;
+}
+
+#web-page {
+  text-decoration: none;
+  color: var(--orange-nh);
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer i {
+  font-size: 1.3em;
+  color: white;
+  text-decoration: none;
+  margin-top: 0.4em;
+  padding-left: 0.5em;
+}
+
+footer img {
+  width: 10%;
+}
+
+@media only screen and (max-width: 700px) {
+  .modelos_group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  section{
+    width: 90%;
+  }
+
+  .jersey_card {
+    width: 48%;
+    margin: 0 0.5em 1em 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .modelos_group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #header-img{
+    width: 25vw;
+    padding: 5vw;
+  }
+
+  nav{
+    width: 70%;
+    padding-right: 0;
+  }
+
+  .jersey_card {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+}
+
+** end of undefined **
+
